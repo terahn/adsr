@@ -1,0 +1,25 @@
+{
+  "name": "adsr-server",
+  "version": "1.0.0",
+  "description": "MongoDB server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index"
+  },
+  "author": "terahn",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "nodemon": "^2.0.4"
+  }
+}
