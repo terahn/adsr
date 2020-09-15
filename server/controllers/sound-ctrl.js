@@ -11,7 +11,6 @@ const createSound = (req, res) => {
   }
 
   const sound = new Sound(body);
-
   if (!sound) {
     return res.status(400).json({ success: false, error: err });
   }
@@ -54,6 +53,7 @@ const updateSound = async (req, res) => {
     sound.downloads = body.downloads;
     sound.likes = body.likes;
     sound.audio = body.audio;
+    sound.type = body.type;
     sound
       .save()
       .then(() => {

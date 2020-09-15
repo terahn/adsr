@@ -7,7 +7,8 @@ const Sound = new Schema(
     name: { type: String, required: true },
     downloads: { type: Number, required: true },
     likes: { type: Number, required: true },
-    audio: { type: Buffer, required: true },
+    audio: { type: String, required: true },
+    type: { type: String, required: true },
     creator_id: { type: Schema.Types.ObjectId, required: true },
   },
   { timestamps: true }
