@@ -7,5 +7,4 @@
 - React
 - Express
 - Node
-- GraphQL
 - MongoDB
